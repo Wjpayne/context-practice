@@ -1,0 +1,29 @@
+[
+  {
+    "image": "https://d3t4e7hsey195a.cloudfront.net/assets/s3/images/quiz/question_1_1.png",
+    "text": "dark chocolate"
+  },
+  {
+    "image": "https://d3t4e7hsey195a.cloudfront.net/assets/s3/images/quiz/question_1_2.png",
+    "text": "milk chocolate"
+  },
+
+  {
+    "image": "https://d3t4e7hsey195a.cloudfront.net/assets/s3/images/quiz/question_1_3.png",
+    "text": "white chocolate"
+  },
+  {
+    "image": "https://d3t4e7hsey195a.cloudfront.net/assets/s3/images/quiz/question_1_4.png",
+    "text": "reese's cup"
+  },
+
+  {
+    "image": "https://d3t4e7hsey195a.cloudfront.net/assets/s3/images/quiz/question_1_5.png",
+    "text": "snickers"
+  },
+
+  {
+    "image": "https://d3t4e7hsey195a.cloudfront.net/assets/s3/images/quiz/question_1_6.png",
+    "text": "where's the fruit candy?"
+  }
+]
