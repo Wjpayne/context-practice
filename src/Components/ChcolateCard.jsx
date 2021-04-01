@@ -4,6 +4,7 @@ import axios from "axios";
 import ChoiceContext from "../ChoiceContext";
 import { cardStyle } from "./CardStyles";
 import { TeaCard } from "./TeaCard";
+import CheckIcon from "@material-ui/icons/Check";
 
 export const ChocolateCard = () => {
   const classes = cardStyle();
@@ -12,11 +13,16 @@ export const ChocolateCard = () => {
 
   const [open, setOpen] = useState(false);
 
+  const [clicked, setClicked] = useState([]);
+
   const { userChoice, setUserChoice } = useContext(ChoiceContext);
 
-  const handleClick = (title) => {
-    setUserChoice({ chocolate: title, dots: "1" });
-    setOpen(true);
+  const handleClick = (title, i) => {
+    setClicked(title);
+    setTimeout(() => {
+      setUserChoice({ chocolate: title, dots: 1 });
+      setOpen(true);
+    }, 700);
   };
 
   useEffect(() => {
@@ -41,13 +47,28 @@ export const ChocolateCard = () => {
                     onClick={() => handleClick(element.text)}
                   >
                     <div key={i + 1} className={classes.imageWrapper}>
-                      <img
-                        alt="dark-chocolate"
-                        src={element.image}
-                        className={classes.img}
-                        key={i}
-                      />
+                      {clicked.indexOf(element.text) ? (
+                        <>
+                          <img
+                            alt="dark-chocolate"
+                            src={element.image}
+                            className={classes.img}
+                            key={i}
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <img
+                            alt="dark-chocolate"
+                            src={element.image}
+                            className={classes.imgActive}
+                            key={i}
+                          />
+                          <CheckIcon className={classes.checkIcon} />
+                        </>
+                      )}
                     </div>
+
                     <div key={i} className={classes.text}>
                       <span key={i}>{element.text}</span>
                     </div>

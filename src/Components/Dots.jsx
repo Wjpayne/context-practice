@@ -9,38 +9,38 @@ export const Dots = () => {
   return (
     <>
       <div className={classes.dotDiv}>
-        {userChoice.dots !== "0" ? (
+        {userChoice.dots >= 0 ? (
           <span className={classes.dotSpanActive}></span>
         ) : (
           <span className={classes.dotSpan}></span>
         )}
 
-        {userChoice.dots !== "1" ? (
+        {userChoice.dots >= 1 ? (
           <span className={classes.dotSpanActive}></span>
         ) : (
           <span className={classes.dotSpan}></span>
         )}
-        {userChoice.dots !== "2" ? (
+        {userChoice.dots >= 2 ? (
           <span className={classes.dotSpanActive}></span>
         ) : (
           <span className={classes.dotSpan}></span>
         )}
-        {userChoice.dots !== "3" ? (
+        {userChoice.dots >= 3 ? (
           <span className={classes.dotSpanActive}></span>
         ) : (
           <span className={classes.dotSpan}></span>
         )}
-        {userChoice.dots !== "4" ? (
+        {userChoice.dots >= 4 ? (
           <span className={classes.dotSpanActive}></span>
         ) : (
           <span className={classes.dotSpan}></span>
         )}
-        {userChoice.dots !== "5" ? (
+        {userChoice.dots >= 5 ? (
           <span className={classes.dotSpanActive}></span>
         ) : (
           <span className={classes.dotSpan}></span>
         )}
-        {userChoice.dots !== "6" ? (
+        {userChoice.dots >= 6 ? (
           <span className={classes.dotSpanActive}></span>
         ) : (
           <span className={classes.dotSpan}></span>

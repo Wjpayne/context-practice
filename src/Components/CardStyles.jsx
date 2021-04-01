@@ -29,24 +29,29 @@ export const cardStyle = makeStyles(() => ({
     width: "300px",
     height: "200px",
     backgroundColor: "#FFF",
-    transition: "box-shadow 0.3s ease ",
+    transition: "box-shadow 0.5s ease ",
     cursor: "pointer",
     "&:hover": {
-      boxShadow: "inset 0px 0px 0px 2px #add8e6",
+      boxShadow: "inset 0px 0px 0px 2px black",
     },
     margin: "10px",
+    position: "relative",
   },
 
   imageWrapper: {
     backgroundColor: "#f9f9f9",
     height: "75%",
     margin: "10px",
-    width: "95%",
+    width: "93%",
     verticalAlign: "baseline",
+    position: "relative",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   img: {
-    position: "relative",
+    position: "absolute",
     left: "50%",
     transform: "translateX(-50%)",
   },
@@ -104,5 +109,23 @@ export const cardStyle = makeStyles(() => ({
     marginRight: "10px",
     borderRadius: "50%",
     boxShadow: "inset 0px 0px 0px 1.5px black",
+  },
+
+  checkIcon: {
+    position: "absolute",
+    fontSize: "100px",
+  },
+
+  imgActive: {
+    position: "absolute",
+    left: "50%",
+    transform: "translateX(-50%)",
+    opacity: "0.3",
+  },
+
+  icon: {
+    float: "left",
+    marginTop: "15px",
+    fontSize: "30px",
   },
 }));

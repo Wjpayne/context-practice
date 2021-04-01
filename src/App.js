@@ -14,7 +14,7 @@ function App() {
     wine: "",
     adventure: "",
     lastQuestion: "",
-    dots: "0",
+    dots: 0,
   });
 
   const classes = cardStyle();
